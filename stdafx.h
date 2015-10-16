@@ -119,7 +119,7 @@ public:
 			//已经打开了正确地文件
 			//计算在缓冲区中的地址
 			unsigned bias = i % FileScale;
-			if (i < 5000000)
+			if (bias < 5000000)
 			{
 				if (whichHalf == 0)
 				{
@@ -167,7 +167,7 @@ public:
 
 		unsigned bias = i % FileScale;
 
-		if (i < 5000000)
+		if (bias < 5000000)
 		{
 			whichHalf = 0;
 			file.seekg(0, file.beg);
