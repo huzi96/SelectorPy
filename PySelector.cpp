@@ -24,7 +24,7 @@ extern "C"
 		item.ads_id.c_str(ads_id);
 		item.pos_id.c_str(pos_id);
 		item.ip_id.c_str(ip_id);
-		return Py_BuildValue("ssssisiii", id, ads_id, pos_id, ip_id, item.lang
+		return Py_BuildValue("ssssisLii", id, ads_id, pos_id, ip_id, item.lang
 			, item.OS_info, item.timeStamp, item.stable, item.click);
 	}
 	static PyObject *sel_close(PyObject *self, PyObject *args)

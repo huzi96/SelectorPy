@@ -85,7 +85,7 @@ struct Info
 	HASH_VALUE id, ads_id, pos_id, ip_id;//16bytes HASH value
 	int lang;//en OR zh , 0->zh, 1->en
 	char OS_info[HASHLEN];//whose length is unknown
-	long timeStamp;//Unix Time stamp
+	long long timeStamp;//Unix Time stamp
 	int stable, click;//is stable / is clicked
 };
 
